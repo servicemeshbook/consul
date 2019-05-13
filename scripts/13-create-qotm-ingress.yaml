@@ -1,0 +1,15 @@
+apiVersion: extensions/v1beta1
+kind: Ingress
+metadata:
+  name: qotm
+  annotations:
+    ingress.kubernetes.io/rewrite-target: /
+spec:
+  rules:
+  - host: qotm.ambassador.io
+    http:
+      paths:
+      - backend:
+          serviceName: qotm
+          servicePort: 5000
+        path: /

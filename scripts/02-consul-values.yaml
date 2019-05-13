@@ -1,0 +1,32 @@
+global:
+  datacenter: dc1
+
+server:
+  replicas: 3
+  bootstrapExpect: 3
+  affinity: ''
+  storage: 2Gi
+  disruptionBudget:
+    enabled: true
+    maxUnavailable: 0
+
+client:
+  enabled: true
+  grpc: true
+
+dns:
+  enabled: true
+
+ui:
+  enabled: true
+
+connectInject:
+  enabled: true
+  default: true
+  centralConfig:
+    enabled: true
+    defaultProtocol: "http"
+    proxyDefaults: |
+      {
+      "envoy_dogstatsd_url": "udp://127.0.0.1:9125"
+      }
