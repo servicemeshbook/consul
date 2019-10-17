@@ -9,7 +9,7 @@ cat << EOF | tee /etc/systemd/system/external-counting.service
   [Service]
   KillSignal=INT
   Environment="PORT=10001"
-  ExecStart=/root/counting-service
+  ExecStart=/bin/counting-service
   Restart=always
 
   [Install]
