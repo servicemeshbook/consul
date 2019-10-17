@@ -5,6 +5,7 @@ server:
   replicas: 3
   bootstrapExpect: 3
   affinity: ''
+  storageClass: "local-storage"
   storage: 2Gi
   disruptionBudget:
     enabled: true

@@ -1,23 +1,8 @@
 apiVersion: extensions/v1beta1
 kind: Ingress
 metadata:
-  name: dashboard
-  annotations:
-    ingress.kubernetes.io/rewrite-target: /
-spec:
-  rules:
-  - host: dashboard.consul.io
-    http:
-      paths:
-      - backend:
-          serviceName: dashboard-service
-          servicePort: 9002
-        path: /
----
-apiVersion: extensions/v1beta1
-kind: Ingress
-metadata:
   name: webconsole
+  namespace: consul
   annotations:
     ingress.kubernetes.io/rewrite-target: /
 spec:
@@ -26,6 +11,6 @@ spec:
     http:
       paths:
       - backend:
-          serviceName: consul-consul-ui
+          serviceName: consul-ui
           servicePort: 80
         path: /

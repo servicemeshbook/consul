@@ -66,6 +66,7 @@ spec:
   ports:
   - protocol: "TCP"
     port: 80
+    nodePort: 30144
     targetPort: 9002
   selector:
     app: dashboard

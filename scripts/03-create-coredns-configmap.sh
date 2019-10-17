@@ -29,6 +29,6 @@ data:
     consul {
       errors
       cache 30
-      proxy . $(kubectl -n consul get svc consul-consul-dns -o jsonpath='{.spec.clusterIP}')
+      proxy . $(kubectl -n consul get svc consul-dns -o jsonpath='{.spec.clusterIP}')
     }
 EOF
