@@ -2,7 +2,7 @@
 
 Contents
 
-- [Installing Consul](#Installing-Linkerd)
+- [Installing Consul](#Installing-Consul)
 - [Service Discovery](#Service-Discovery)
 - [Traffic Management](#Traffic-Management)
 
@@ -177,10 +177,6 @@ kubectl -n consul exec -it consul-server-0 -- consul info
 
 ### End of Consul Install commands
 
-### Asciinema recording - Consul - Install 
-
-[![asciicast](https://asciinema.org/a/275098.svg)](https://asciinema.org/a/275098)
-
 ## Service Discovery
 
 ### Installing Demo Application
@@ -323,13 +319,18 @@ curl -X PUT -d @external-counting.json http://localhost:8500/v1/agent/service/re
 
 ### The external service should show in the web console of Consul.
 
-### Asciinema recording - Consul Service Discovery
-[![asciicast](https://asciinema.org/a/275154.svg)](https://asciinema.org/a/275154)
 
 ### End of Consul Service Discovery commands
 
 ## Traffic Management
 
+### Implementing L7 Configuration
 
+### Create an instance of service-defaults for service web that will use http protocol
+
+```
+cat 08-service-defaults-web.hcl
+consul config write 08-service-defaults-web.hcl
+```
 
 ### End of Consul Traffic Management commands
