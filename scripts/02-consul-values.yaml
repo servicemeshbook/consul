@@ -1,7 +1,11 @@
 global:
   datacenter: dc1
+  image: "consul:1.6.1"
+  #imageK8S: "hashicorp/consul-k8s:0.9.1"
+  imageK8S: "nicholasjackson/consul-k8s-dev:beta"
 
 server:
+  enabled: true
   replicas: 3
   bootstrapExpect: 3
   affinity: ''
@@ -23,11 +27,17 @@ ui:
 
 connectInject:
   enabled: true
+  imageEnvoy: "envoyproxy/envoy:v1.10.0"
   default: true
   centralConfig:
     enabled: true
     defaultProtocol: "http"
     proxyDefaults: |
       {
-      "envoy_dogstatsd_url": "udp://127.0.0.1:9125"
+        "envoy_dogstatsd_url": "udp://127.0.0.1:9125"
       }
+
+
+# Sync Kubernetes and Consul services
+#syncCatalog:
+#  enabled: true

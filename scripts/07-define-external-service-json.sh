@@ -1,6 +1,6 @@
 #!/bin/bash
 
-cat << EOF | tee external-counting.json
+cat << EOF | sudo tee external-counting.json
 {
   "Name": "external-counting",
   "Tags": [
