@@ -1,15 +1,14 @@
 global:
   datacenter: dc1
   image: "consul:1.6.1"
-  #imageK8S: "hashicorp/consul-k8s:0.9.1"
-  imageK8S: "nicholasjackson/consul-k8s-dev:beta"
+  imageK8S: "hashicorp/consul-k8s:0.11.0"
 
 server:
   enabled: true
   replicas: 3
   bootstrapExpect: 3
   affinity: ''
-  storageClass: "local-storage"
+  storageClass: "consul-storage"
   storage: 2Gi
   disruptionBudget:
     enabled: true
@@ -36,7 +35,6 @@ connectInject:
       {
         "envoy_dogstatsd_url": "udp://127.0.0.1:9125"
       }
-
 
 # Sync Kubernetes and Consul services
 #syncCatalog:
