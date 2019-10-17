@@ -154,10 +154,6 @@ kubectl -n kube-system get cm coredns -o yaml
 kubectl -n consul get ep
 ```
 
-### Join the Kubernetes consul cluster to the Consul running in a VM
-```
- consul join consul-server.consul.svc.cluster.local
-```
 
 ### Query the node names using REST API.
 ```
@@ -174,20 +170,21 @@ kubectl -n consul exec -it consul-server-0 -- consul members
 consul members
 ```
 
-### Leave the Consul cluster.
-```
-consul leave
-```
-
 ### Use consul info command
 ```
 kubectl -n consul exec -it consul-server-0 -- consul info
 ```
 
-### End of Consul Visibility commands
+### End of Consul Install commands
+
+### Asciinema Consul - Install 
+
+[![asciicast](https://asciinema.org/a/275098.svg)](https://asciinema.org/a/275098)
 
 ## Service Discovery
+
 ### End of Consul Service Discovery commands
 
 ## Traffic Management
+
 ### End of Consul Traffic Management commands

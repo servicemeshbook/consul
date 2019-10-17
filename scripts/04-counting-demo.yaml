@@ -70,4 +70,4 @@ spec:
     targetPort: 9002
   selector:
     app: dashboard
-  type: ClusterIP
+  type: NodePort
