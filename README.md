@@ -5,12 +5,6 @@
 - [Traffic Management](scripts#traffic-management)
 
 
-## termtosvg recordings
-
-### Consul Traffic Management
-
-![Example](./termtosvg/22-consul-traffic-management.svg)
-
 ## Ascinema recordings
 
 ### Consul - Install 
