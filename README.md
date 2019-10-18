@@ -4,14 +4,21 @@
 - [Service Discovery](scripts#service-discovery)
 - [Traffic Management](scripts#traffic-management)
 
+
+## termtosvg recordings
+
+### Consul Traffic Management
+
+![Example](./termtosvg/22-consul-traffic-management.svg)
+
 ## Ascinema recordings
 
-### Asciinema recording - Consul - Install 
+### Consul - Install 
 
 [![asciicast](https://asciinema.org/a/275098.svg)](https://asciinema.org/a/275098)
 
-### Asciinema recording - Consul - Service Discovery
+### Consul - Service Discovery
 [![asciicast](https://asciinema.org/a/275154.svg)](https://asciinema.org/a/275154)
 
-### Asciinema recording - Consul - Traffic Management
+### Consul - Traffic Management
 [![asciicast](https://asciinema.org/a/275423.svg)](https://asciinema.org/a/275423)
