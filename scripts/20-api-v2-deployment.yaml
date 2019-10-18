@@ -36,24 +36,13 @@ spec:
     spec:
       containers:
         - name: api
-          image: docker.io/vikramkhatri/hello-admin:1.0
+          image: nicholasjackson/fake-service:v0.7.3
           ports:
           - containerPort: 8080
-            name: http
           env:
-          - name: POD_IP
-            valueFrom:
-              fieldRef:
-                fieldPath: status.podIP
-          - name: HOST_IP
-            valueFrom:
-              fieldRef:
-                fieldPath: status.hostIP
-          - name: POD_NAME
-            valueFrom:
-              fieldRef:
-                fieldPath: metadata.name
-          - name: POD_NAMESPACE
-            valueFrom:
-              fieldRef:
-                fieldPath: metadata.namespace
+          - name: "LISTEN_ADDR"
+            value: "0.0.0.0:8080"
+          - name: "NAME"
+            value: "api-v2"
+          - name: "MESSAGE"
+            value: "Response from API v2"
