@@ -1,9 +1,12 @@
-# Consul Exercises
+# Learn Consul by Examples
 
 - [Consul Install](scripts#installing-consul)
 - [Service Discovery](scripts#service-discovery)
 - [Traffic Management](scripts#traffic-management)
 
+## Version
+
+This branch has scripts that works with Consul 1.6.1 release.
 
 ## Ascinema recordings
 
