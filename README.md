@@ -1,21 +1,21 @@
 # Learn Consul by Examples
 
-- [Consul Install](scripts#installing-consul)
-- [Service Discovery](scripts#service-discovery)
-- [Traffic Management](scripts#traffic-management)
+- [Chapter 20 - Installing Consul](scripts#installing-consul)
+- [Chapter 21 - Exploring the Service Discovery Features of Consul](scripts#service-discovery)
+- [Chapter 22 - Exploring Traffic Management in Consul](scripts#traffic-management)
 
 ## Version
 
 This branch has scripts that works with Consul 1.6.1 release.
 
-## Ascinema recordings
+## Consul Chapters Walk-Through
 
-### Consul - Install 
+### Chapter 20 - Installing Consul
 
 [![asciicast](https://asciinema.org/a/275098.svg)](https://asciinema.org/a/275098)
 
-### Consul - Service Discovery
+### Chapter 21 - Exploring the Service Discovery Features of Consul
 [![asciicast](https://asciinema.org/a/275154.svg)](https://asciinema.org/a/275154)
 
-### Consul - Traffic Management
+### Chapter 22 - Exploring Traffic Management in Consul
 [![asciicast](https://asciinema.org/a/275423.svg)](https://asciinema.org/a/275423)
