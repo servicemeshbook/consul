@@ -2,9 +2,9 @@
 
 Contents
 
-- [Installing Consul](#Installing-Consul)
-- [Service Discovery](#Service-Discovery)
-- [Traffic Management](#Traffic-Management)
+- [Chapter 20 - Installing Consul](#Installing-Consul)
+- [Chapter 21 - Exploring the Service Discovery Features of Consul](#Service-Discovery)
+- [Chapter 22 - Exploring Traffic Management in Consul](#Traffic-Management)
 
 Copy and paste command as you practice.
 
