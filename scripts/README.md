@@ -2,13 +2,13 @@
 
 Contents
 
-- [Chapter 20 - Installing Consul](#Installing-Consul)
-- [Chapter 21 - Exploring the Service Discovery Features of Consul](#Service-Discovery)
-- [Chapter 22 - Exploring Traffic Management in Consul](#Traffic-Management)
+- [Chapter 20 - Installing Consul](#Chapter-20---Installing-Consul)
+- [Chapter 21 - Exploring the Service Discovery Features of Consul](#Chapter-21---Exploring-the-Service-Discovery-Features-of-Consul)
+- [Chapter 22 - Exploring Traffic Management in Consul](#Chapter-22---Exploring-Traffic-Management-in-Consul)
 
 Copy and paste command as you practice.
 
-## Installing Consul
+## Chapter 20 - Installing Consul
 
 ### Prerequisite
 
@@ -176,7 +176,7 @@ kubectl -n consul exec -it consul-server-0 -- consul info
 
 ### End of Consul Install commands
 
-## Service Discovery
+## Chapter 21 - Exploring the Service Discovery Features of Consul
 
 ### Installing Demo Application
 
@@ -326,7 +326,7 @@ curl -X PUT -d @external-counting.json http://localhost:8500/v1/agent/service/re
 
 ### End of Consul Service Discovery commands
 
-## Traffic Management
+## Chapter 22 - Exploring Traffic Management in Consul
 
 ### Make sure you are in ~/consul/scripts directory
 ```
