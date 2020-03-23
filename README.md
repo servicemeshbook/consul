@@ -8,6 +8,8 @@
 
 This branch has scripts that works with Consul 1.6.1 release.
 
+## Disclaimer: Some of the command outputs such as pod, service, and deployment names, IP addresses etc. might not always match to what's in the book. But the expected behavior will be the same. 
+
 ## Consul Chapters Walk-Through
 
 ### Chapter 20 - Installing Consul
